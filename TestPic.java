@@ -9,11 +9,6 @@ public class TestPic
         Canvas pic = Canvas.getCanvas();
         pic.setTitle("Shapes Constructor Test Picture");
         
-        // Draw my picture
-        //horizontal min/max: -310, 430
-        //vertical min/max: -120, 420
-        //default dimesions are 30x30 at (370,180)
-        
         //colors: white #d64b4b #bf3a55 #903f5c #7a3a64 #632b58
         
         //creating objects and making them visible:
@@ -59,7 +54,7 @@ public class TestPic
         int triAmount=7;
         //for loop creates and positions all triangles
         Triangle tri[]= new Triangle[triAmount];
-        for (int i=0; i<=triAmount; i++){ 
+        for (int i=0; i<triAmount; i++){ 
             tri[i]=new Triangle();
             tri[i].changeColor("white");
             tri[i].makeVisible();
@@ -107,8 +102,6 @@ public class TestPic
             }
         }
         
-        
-
         // Save the picture to a file
         String filename = "testpic.png";
         try {
